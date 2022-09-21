@@ -32,9 +32,9 @@ const readFile = (path, callback) => {
 
 console.log('start');
 
-readConfig('myConfig', () => {});
-doQuery('select * from cities', () => {});
-httpGet('http://kpi.ua', () => {});
-readFile('README.md', () => {});
+readConfig('myConfig', (err, result) => {});
+doQuery('select * from cities', (err, result) => {});
+httpGet('http://kpi.ua', (err, result) => {});
+readFile('README.md', (err, result) => {});
 
 console.log('end');

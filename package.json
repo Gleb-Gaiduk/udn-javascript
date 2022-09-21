@@ -1,12 +1,17 @@
 {
-  "name": "async",
+  "name": "UDNJS",
   "version": "1.0.0",
-  "description": "",
+  "description": "You dont know JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "JS",
+    "javascript",
+    "asynchronous programming",
+    "synchronous programming"
+  ],
+  "author": "Hleb Haiduk",
   "license": "ISC"
 }

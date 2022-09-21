@@ -1,3 +1,5 @@
+'use strict';
+
 // Convert sync function to callback-last / error-first contract
 //   fn <Function> regular synchronous function
 //
