@@ -10,11 +10,11 @@
 //   done - <Function>, on done
 //     err - <Error> | <null>
 //     result - <Array>
-const asyncParallelMap = (items, onItemFn, onDone) => {
+const asyncParallelMap = (items, onItemFn, onDoneFn) => {
   const length = items?.length;
 
   if (!length) {
-    onDone(null, []);
+    onDoneFn(null, []);
     return;
   }
 
@@ -33,7 +33,7 @@ const asyncParallelMap = (items, onItemFn, onDone) => {
     result[index] = value;
     count++;
 
-    if (count === length) onDone(null, result);
+    if (count === length) onDoneFn(null, result);
   };
 
   for (let i = 0; i < length; i++) {
